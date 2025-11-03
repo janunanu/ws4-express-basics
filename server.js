@@ -1,9 +1,9 @@
 const path = require("path");
 const express = require("express");
 const axios = require("axios");
-const { use } = require("react");
 const app = express();
 const PORT = process.env.PORT || 3000;
+
 app.use(express.urlencoded({ extended: true })); // read HTML form fields into req.body
 app.use(express.json()); // read JSON bodies
 app.use(express.static(path.join(__dirname, "public"))); //serve filels from /public
